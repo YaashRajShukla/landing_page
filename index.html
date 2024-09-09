@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brains Media Solutions</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="min-h-screen flex flex-col">
+        <!-- Menu Bar -->
+        <header class="bg-gray-800 text-white">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold" style="font-weight: bold; color: #ffffff;">Brains Media</a>
+                <nav class="hidden md:flex space-x-4">
+                    <a href="#services" class="hover:text-gray-300">Services</a>
+                    <a href="#about" class="hover:text-gray-300">About</a>
+                    <a href="#mission" class="hover:text-gray-300">Mission</a>
+                    <a href="#vision" class="hover:text-gray-300">Vision</a>
+                </nav>
+                <button id="menu-toggle" class="md:hidden">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+            <nav id="mobile-menu" class="hidden md:hidden bg-gray-700 p-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="#services" class="text-white hover:text-gray-300">Services</a>
+                    <a href="#about" class="text-white hover:text-gray-300">About</a>
+                    <a href="#mission" class="text-white hover:text-gray-300">Mission</a>
+                    <a href="#vision" class="text-white hover:text-gray-300">Vision</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Slider -->
+        <section class="relative h-[60vh] overflow-hidden">
+            <div id="slider" class="w-full h-full">
+                <div class="slide absolute top-0 left-0 w-full h-full opacity-100 transition-opacity duration-1000">
+                    <img src="/placeholder.svg?height=600&width=1200" alt="Welcome to Brains Media Solutions" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                        <h2 class="text-white text-4xl md:text-6xl font-bold text-center px-4">Welcome to Brains Media Solutions</h2>
+                    </div>
+                </div>
+                <div class="slide absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-1000">
+                    <img src="/placeholder.svg?height=600&width=1200" alt="Innovative Digital Strategies" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                        <h2 class="text-white text-4xl md:text-6xl font-bold text-center px-4">Innovative Digital Strategies</h2>
+                    </div>
+                </div>
+                <div class="slide absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-1000">
+                    <img src="/placeholder.svg?height=600&width=1200" alt="Transforming Businesses" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                        <h2 class="text-white text-4xl md:text-6xl font-bold text-center px-4">Transforming Businesses</h2>
+                    </div>
+                </div>
+            </div>
+            <button id="prev-slide" class="prev-btn">
+                <i class="uil uil-angle-left" style="font-size: 24px;"></i>
+              </button>
+               <button id="next-slide" class="next-btn">
+                <i class="uil uil-angle-right" style="font-size: 24px;"></i>
+               </button>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class=" py-16 bg-gray-100">
+            <div class="  container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+                <div class="  grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="service-item bg-white p-6 rounded-lg shadow-md">
+                        <img src="/images/istockphoto-1443560890-612x612.jpg" alt="Digital Marketing" class="w-full h-48 object-cover mb-4">
+                        <h3 class="text-xl font-semibold mb-4">Digital Marketing</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="service-item bg-white p-6 rounded-lg shadow-md">
+                        <img src="/images/WebDevelopmentProjects2.png" alt="Web Development" class="w-full h-48 object-cover mb-4"  height="56%">
+                        <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="service-item bg-white p-6 rounded-lg shadow-md">
+                        <img src="/images/images.jpeg" alt="Content Creation" class="w-full h-48 object-cover mb-4" height="56%">
+                        <h3 class="text-xl font-semibold mb-4">Content Creation</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">About Us</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="/images/about2.webp " alt="About Us" class="rounded-lg shadow-md w-full"height="400" width="600">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission -->
+        <section id="mission" class="py-16 bg-gray-800 text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Our Mission</h2>
+                <p class="text-center max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+
+        <!-- Vision -->
+        <section id="vision" class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Our Vision</h2>
+                <p class="text-center max-w-2xl mx-auto">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="/placeholder.svg?height=50&width=200" alt="Brains Media Solutions Logo">
+                        <p>Empowering businesses through innovative digital solutions</p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-icons">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Brains Media Solutions. All rights reserved.</p>
+                    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
